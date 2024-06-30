@@ -37,7 +37,8 @@ function createLotteryNum() {
         }
     }
 
-    lotteryNumElement.innerHTML = `${lotteryNum}`;
+    lotteryNumElement.innerHTML = `${lotteryNum.sort((a, b) => a - b)}`;
+    console.log(lotteryNum);
 }
 
 lotteryBtn.addEventListener("click", createLotteryNum);
