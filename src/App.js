@@ -1,25 +1,25 @@
 import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
+import { useNavigate } from "react-router-dom";
+import { useState } from "react";
+import { ButtonGroup, ToggleButton, Button } from "react-bootstrap";
+import "./assets/styles/App.css";
 
 function App() {
+    let [selected, setSelected] = useState("");
+
     return (
-        <div className="App">
-            <header className="App-header">
-                <img src={logo} className="App-logo" alt="logo" />
-                <p>
-                    Edit <code>src/App.js</code> and save to reload.
-                </p>
-                <a
-                    className="App-link"
-                    href="https://reactjs.org"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    Learn React
-                </a>
-            </header>
-        </div>
+        <>
+            <div className="select-box">
+                <button className={`select-btn ${selected ? "selected" : ""}`}>
+                    로또 6/45
+                </button>
+                <button className="select-btn">연금 복권</button>
+            </div>
+            <div>
+                <div className="lottery"></div>
+                <div className="pension-lottery"></div>
+            </div>
+        </>
     );
 }
 
