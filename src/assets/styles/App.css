@@ -59,3 +59,7 @@
 .select-btn:active {
     background-color: #bfbfbf;
 }
+
+.selected {
+    background-color: #818181;
+}
