@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import { useState } from "react";
 import "./styles/App.css";
+import Lottery from "./components/Lottery";
+import Pension from "./components/Pension";
 import axios from "axios";
 
 function App() {
