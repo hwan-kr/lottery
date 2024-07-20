@@ -41,7 +41,6 @@
 .select-box {
     display: flex;
     justify-content: center;
-    align-items: center;
 }
 .select-btn {
     border-radius: 4px !important;
@@ -64,4 +63,8 @@
 .lottery {
     display: flex;
     flex-direction: column;
+}
+
+.hide {
+    display: none;
 }

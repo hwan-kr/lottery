@@ -1,7 +1,9 @@
 function Lottery() {
     return (
         <>
-            <div></div>
+            <div>안녕</div>
+            <div>안녕</div>
+            <div>안녕</div>
         </>
     );
 }

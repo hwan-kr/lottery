@@ -22,6 +22,9 @@ function App() {
                     >
                         로또 6/45
                     </button>
+                    <div className={`${selected !== "lottery" ? "hide" : ""}`}>
+                        <Lottery></Lottery>
+                    </div>
                 </div>
                 <div className="pension-lottery">
                     <button
@@ -34,6 +37,9 @@ function App() {
                     >
                         연금 복권
                     </button>
+                    <div className={`${selected !== "pension" ? "hide" : ""}`}>
+                        <Pension></Pension>
+                    </div>
                 </div>
             </div>
         </>
