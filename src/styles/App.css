@@ -42,16 +42,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
 }
-
 .select-btn {
     border-radius: 4px !important;
     margin: 5px;
     width: 15rem;
     height: 3rem;
 }
-
 .select-btn:hover {
     background-color: #d9d9d9;
 }
@@ -62,4 +59,9 @@
 
 .selected {
     background-color: #818181;
+}
+
+.lottery {
+    display: flex;
+    flex-direction: column;
 }

@@ -1,8 +1,7 @@
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useEffect } from "react";
 import { useState } from "react";
-import { ButtonGroup, ToggleButton, Button } from "react-bootstrap";
-import "./assets/styles/App.css";
+import "./styles/App.css";
+import axios from "axios";
 
 function App() {
     let [selected, setSelected] = useState("lottery");
@@ -40,12 +39,3 @@ function App() {
 }
 
 export default App;
-{
-    /* <div className="lottery-items ">
-    <div>번호 리스트</div>
-    <div>
-        <button>랜덤 번호 추출</button>
-        <button>번호 저장</button>
-    </div>
-</div>; */
-}
